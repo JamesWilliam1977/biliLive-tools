@@ -2,7 +2,7 @@
 
 ## 功能
 
-- 录制：斗鱼获取流迁移到新接口，支持流编码选项
+- 录制：斗鱼获取流迁移到新接口，支持流编码选项 [#449](https://github.com/renmu123/biliLive-tools/pull/449)
 - 录制：新增主播详情页用于数据展示 [#426](https://github.com/renmu123/biliLive-tools/pull/426)
 
 ## 优化
