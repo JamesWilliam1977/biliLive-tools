@@ -1,0 +1,278 @@
+# Instincts generated from https://github.com/JamesWilliam1977/biliLive-tools
+# Generated: 2026-08-01T18:14:44.276Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: biliLive-tools-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/biliLive-tools
+---
+
+# BiliLive Tools Commit Length
+
+## Action
+
+Keep commit messages concise (~17 characters)
+
+## Evidence
+
+- Average commit message length: 17 chars
+- Based on 2 commits
+
+---
+id: biliLive-tools-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/biliLive-tools
+---
+
+# BiliLive Tools Naming Files
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: PascalCase
+
+---
+id: biliLive-tools-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/biliLive-tools
+---
+
+# BiliLive Tools Export Style
+
+## Action
+
+Prefer mixed exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: mixed
+
+---
+id: biliLive-tools-arch-type-based
+trigger: "when adding new code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/biliLive-tools
+---
+
+# BiliLive Tools Arch Type Based
+
+## Action
+
+Place code in the appropriate type folder (components/, services/, utils/, etc.)
+
+## Evidence
+
+- Type-based module organization detected
+- Folders: 
+
+---
+id: biliLive-tools-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/biliLive-tools
+---
+
+# BiliLive Tools Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: bililive-tools-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/biliLive-tools
+---
+
+# Bililive Tools Instinct File Naming
+
+## Action
+
+Name the file using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: bililive-tools-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/biliLive-tools
+---
+
+# Bililive Tools Instinct Function Naming
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: bililive-tools-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/biliLive-tools
+---
+
+# Bililive Tools Instinct Class Naming
+
+## Action
+
+Use PascalCase for the class name
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: bililive-tools-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/biliLive-tools
+---
+
+# Bililive Tools Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: bililive-tools-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/biliLive-tools
+---
+
+# Bililive Tools Instinct Import Style
+
+## Action
+
+Use absolute import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: bililive-tools-instinct-export-style
+trigger: "When exporting modules or members"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/biliLive-tools
+---
+
+# Bililive Tools Instinct Export Style
+
+## Action
+
+Use either named or default exports as appropriate
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: bililive-tools-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/biliLive-tools
+---
+
+# Bililive Tools Instinct Test Location
+
+## Action
+
+Place test files in a separate test directory
+
+## Evidence
+
+- Pattern in architecture.testLocation
+
+---
+id: bililive-tools-instinct-monorepo-packages
+trigger: "When creating a new module or package"
+confidence: 0.9
+domain: architecture
+source: repo-analysis
+source_repo: JamesWilliam1977/biliLive-tools
+---
+
+# Bililive Tools Instinct Monorepo Packages
+
+## Action
+
+Place it under the 'packages' directory
+
+## Evidence
+
+- Pattern in architecture.commonFolders
+- Monorepo structure
+
+---
+id: bililive-tools-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/biliLive-tools
+---
+
+# Bililive Tools Instinct Git Commit Format
+
+## Action
+
+Start the message with a type prefix (e.g., 'UI：', '优化'), followed by a brief description
+
+## Evidence
+
+- Seen in commit examples: 'UI：小屏幕兼容 (#517)', '优化频道ID解析功能，增加加载状态指示'
+
